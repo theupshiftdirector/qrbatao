@@ -31,6 +31,16 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://qrbatao.com/best-upi-apps/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://qrbatao.com/best-qr-code-generators/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://qrbatao.com/privacy</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
