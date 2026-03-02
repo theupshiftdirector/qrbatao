@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What is a QR Code — How It Works & Types Explained (2026)</title>
+    <meta name="description" content="Learn what a QR code is, how it works, types of QR codes (static vs dynamic), common uses, capacity limits, and security tips. Complete guide with examples.">
+    <meta name="keywords" content="what is qr code, how qr code works, qr code types, static vs dynamic qr code, qr code history, qr code security">
+    <link rel="canonical" href="https://qrbatao.com/what-is-qr-code/">
+    <meta property="og:title" content="What is a QR Code — How It Works & Types Explained (2026)">
+    <meta property="og:description" content="Learn what a QR code is, how it works, types of QR codes, common uses, and security tips. Complete guide.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://qrbatao.com/what-is-qr-code/">
+    <meta property="og:site_name" content="QR Batao">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="What is a QR Code — How It Works & Types Explained (2026)">
+    <meta name="twitter:description" content="Complete guide to QR codes — history, how they work, types, uses, and security.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8235932614579966" crossorigin="anonymous"></script>
+    <script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What does QR stand for?","acceptedAnswer":{"@type":"Answer","text":"QR stands for Quick Response. The name reflects the code's ability to be scanned and decoded quickly. QR codes were invented in 1994 by Denso Wave, a subsidiary of Toyota, to track vehicle parts during manufacturing. Unlike traditional barcodes that store data in one dimension, QR codes store data in two dimensions (horizontally and vertically), allowing them to hold significantly more information."}},{"@type":"Question","name":"What is the difference between static and dynamic QR codes?","acceptedAnswer":{"@type":"Answer","text":"Static QR codes have data permanently encoded — once generated, the content cannot be changed. They work offline and never expire. Dynamic QR codes contain a short redirect URL instead of the actual content. The destination can be changed anytime without reprinting the QR code. Dynamic codes also offer scan tracking and analytics. Static codes are free and simple; dynamic codes require a subscription service but offer flexibility."}},{"@type":"Question","name":"How much data can a QR code store?","acceptedAnswer":{"@type":"Answer","text":"A QR code can store up to 7,089 numeric characters, 4,296 alphanumeric characters, or 2,953 bytes of binary data. However, the more data you encode, the denser and harder to scan the QR code becomes. For practical use, keeping the content under 300 characters is recommended for reliable scanning across all devices."}},{"@type":"Question","name":"Are QR codes safe to scan?","acceptedAnswer":{"@type":"Answer","text":"QR codes themselves are safe — they are simply data containers. However, malicious actors can create QR codes that link to phishing websites, malware downloads, or fraudulent payment pages. Always check the URL preview before opening a link from a QR code. Use your phone's built-in camera app (which shows URL previews) rather than third-party scanner apps. Never scan QR codes from untrusted sources or codes that appear to be pasted over existing ones."}},{"@type":"Question","name":"Do QR codes expire?","acceptedAnswer":{"@type":"Answer","text":"Static QR codes never expire — they work as long as the encoded content (URL, text, etc.) remains valid. If a static QR code links to a website and that website goes down, the QR code still works but the destination is unavailable. Dynamic QR codes may expire if the service provider's subscription lapses or if the provider sets an expiration date. For permanent use, static QR codes are more reliable."}}]}
+</script>
+    <script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://qrbatao.com/"},{"@type":"ListItem","position":2,"name":"What is a QR Code"}]}
+</script>
+    <style>
+        :root {
+            --bg: #0a0a0b;
+            --card: #141416;
+            --card-hover: #1a1a1e;
+            --border: #2a2a2e;
+            --text: #e8e8ec;
+            --text-muted: #8a8a94;
+            --accent: #f97316;
+            --accent-dim: #f9731620;
+            --green: #22c55e;
+            --red: #ef4444;
+            --input-bg: #1a1a1e;
+            --blue: #38bdf8;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        .header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            background: rgba(10,10,11,0.85);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .header-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--text);
+            text-decoration: none;
+        }
+
+        .logo span { color: var(--accent); }
+
+        .header-badge {
+            background: var(--accent-dim);
+            color: var(--accent);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        .breadcrumb {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 16px 24px 0;
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+        .breadcrumb a { color: var(--text-muted); text-decoration: none; }
+        .breadcrumb a:hover { color: var(--accent); }
+        .breadcrumb span { color: var(--text-muted); margin: 0 6px; }
+
+        .page-hero {
+            text-align: center;
+            padding: 40px 24px 32px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .page-hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 36px;
+            line-height: 1.2;
+            margin-bottom: 12px;
+        }
+        .page-hero h1 .hl { color: var(--accent); }
+        .page-hero p {
+            color: var(--text-muted);
+            font-size: 16px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .page-hero .updated {
+            display: inline-block;
+            margin-top: 12px;
+            font-size: 12px;
+            color: var(--text-muted);
+            background: var(--card);
+            border: 1px solid var(--border);
+            padding: 4px 12px;
+            border-radius: 20px;
+        }
+
+        .content-section {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 24px 60px;
+        }
+        .content-section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 24px;
+            margin: 40px 0 16px;
+        }
+        .content-section h2 .hl { color: var(--accent); }
+        .content-section h3 {
+            font-size: 18px;
+            margin: 24px 0 10px;
+            color: var(--text);
+        }
+        .content-section p {
+            color: var(--text-muted);
+            margin-bottom: 16px;
+            font-size: 15px;
+        }
+        .content-section ul, .content-section ol {
+            color: var(--text-muted);
+            padding-left: 20px;
+            margin-bottom: 16px;
+            font-size: 15px;
+        }
+        .content-section li { margin-bottom: 6px; }
+        .content-section strong { color: var(--text); }
+
+        .info-card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 24px 28px;
+            margin: 24px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0;
+            font-size: 14px;
+        }
+        th, td {
+            padding: 12px 16px;
+            text-align: left;
+            border: 1px solid var(--border);
+        }
+        th {
+            background: var(--card);
+            color: var(--accent);
+            font-weight: 600;
+        }
+        td { color: var(--text-muted); }
+
+        .calc-cta {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 24px 40px;
+            text-align: center;
+        }
+        .calc-cta-box {
+            background: var(--accent-dim);
+            border: 1px solid var(--accent);
+            border-radius: 16px;
+            padding: 32px;
+        }
+        .calc-cta-box h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 22px;
+            margin-bottom: 8px;
+        }
+        .calc-cta-box p {
+            color: var(--text-muted);
+            font-size: 14px;
+            margin-bottom: 16px;
+        }
+        .calc-cta-btn {
+            display: inline-block;
+            padding: 14px 32px;
+            background: var(--accent);
+            color: #000;
+            border-radius: 12px;
+            font-family: 'Outfit', sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: opacity 0.2s;
+        }
+        .calc-cta-btn:hover { opacity: 0.9; }
+
+        .faq-section {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px 24px 60px;
+        }
+        .faq-section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 24px;
+            margin-bottom: 16px;
+        }
+        .faq-item {
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px 24px;
+            margin-bottom: 12px;
+            background: var(--card);
+        }
+        .faq-item h3 { font-size: 15px; margin-bottom: 8px; }
+        .faq-item p { font-size: 14px; color: var(--text-muted); margin: 0; }
+
+        .links-section {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px 24px 40px;
+        }
+        .links-section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 22px;
+            margin-bottom: 16px;
+        }
+        .links-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 8px;
+        }
+        .links-grid a {
+            display: block;
+            padding: 12px 16px;
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            color: var(--text);
+            text-decoration: none;
+            font-size: 14px;
+            transition: border-color 0.2s;
+        }
+        .links-grid a:hover { border-color: var(--accent); }
+        .links-grid a .link-sub { display: block; font-size: 12px; color: var(--text-muted); margin-top: 2px; }
+
+        .disclaimer {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 24px 24px;
+        }
+        .disclaimer-box {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 16px 20px;
+            font-size: 12px;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 40px 24px;
+            border-top: 1px solid var(--border);
+            color: var(--text-muted);
+            font-size: 13px;
+        }
+        .footer a { color: var(--text-muted); text-decoration: none; }
+        .footer a:hover { color: var(--accent); }
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            margin-bottom: 12px;
+            flex-wrap: wrap;
+        }
+
+        @media (max-width: 900px) {
+            .page-hero h1 { font-size: 28px; }
+        }
+        @media (max-width: 480px) {
+            .links-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<header class="header">
+    <div class="header-inner">
+        <a href="/" class="logo">QR <span>Batao</span></a>
+        <div class="header-badge">100% Free</div>
+    </div>
+</header>
+
+<nav class="breadcrumb"><a href="/">Home</a><span>&rsaquo;</span><span style="color:var(--text)">What is a QR Code</span></nav>
+
+<section class="page-hero">
+    <h1>What is a <span class="hl">QR Code</span> &mdash; How It Works & Types Explained</h1>
+    <p>Everything you need to know about QR codes in 2026 &mdash; their history, how they encode data, the difference between static and dynamic types, and how to stay safe.</p>
+    <div class="updated">Updated: March 2026</div>
+</section>
+
+<!-- Ad: Below Hero -->
+<div style="max-width:800px;margin:0 auto 24px;padding:0 24px;text-align:center;">
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8235932614579966" data-ad-slot="auto" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+
+<section class="content-section">
+
+    <h2>History of <span class="hl">QR Codes</span></h2>
+    <p>QR codes (Quick Response codes) were invented in 1994 by <strong>Masahiro Hara</strong> at Denso Wave, a subsidiary of Toyota. The original purpose was to track vehicle parts during manufacturing. Traditional barcodes could only store about 20 characters, which was insufficient for Toyota's complex inventory system. Hara's team developed a two-dimensional code that could store thousands of characters and be scanned at high speed from any angle.</p>
+    <p>Denso Wave made a pivotal decision to release the QR code specification publicly, allowing anyone to create and use QR codes without paying licensing fees. This open approach led to rapid global adoption. By the early 2000s, QR codes were widely used in Japan for mobile payments, advertising, and product tracking.</p>
+    <p>The global breakthrough came during the COVID-19 pandemic (2020-2021), when contactless interactions became essential. Restaurants replaced physical menus with QR codes, governments used them for health passes, and digital payments via QR codes exploded in countries like India (through UPI). Today, QR codes are an integral part of daily life worldwide.</p>
+
+    <h2>How QR Codes <span class="hl">Work</span></h2>
+    <p>A QR code is essentially a two-dimensional matrix of black and white squares (called "modules") arranged in a square grid on a white background. The data is encoded in both the horizontal and vertical dimensions, unlike traditional barcodes which use only one dimension.</p>
+
+    <h3>Structure of a QR Code</h3>
+    <p>Every QR code contains several key components that enable scanning and decoding:</p>
+    <ul>
+        <li><strong>Finder patterns:</strong> The three large squares in the corners (top-left, top-right, bottom-left) help scanners quickly locate and orient the QR code, regardless of the scanning angle.</li>
+        <li><strong>Alignment pattern:</strong> A smaller square pattern that helps correct distortion when the QR code is printed on a curved surface or scanned at an angle.</li>
+        <li><strong>Timing patterns:</strong> Alternating black and white modules between the finder patterns that help the scanner determine the grid size and module coordinates.</li>
+        <li><strong>Format information:</strong> Encoded near the finder patterns, this stores the error correction level and mask pattern used.</li>
+        <li><strong>Data and error correction:</strong> The actual encoded data plus Reed-Solomon error correction codes that allow the QR code to remain readable even if partially damaged (up to 30% damage tolerance).</li>
+        <li><strong>Quiet zone:</strong> The white border around the QR code (minimum 4 modules wide) that separates it from surrounding visual elements.</li>
+    </ul>
+
+    <h3>Encoding Process</h3>
+    <p>When you generate a QR code, the data goes through these steps:</p>
+    <ol>
+        <li><strong>Data analysis:</strong> The encoder determines the most efficient encoding mode (numeric, alphanumeric, byte, or kanji) based on the input characters.</li>
+        <li><strong>Data encoding:</strong> The input is converted into a binary bit stream using the selected mode.</li>
+        <li><strong>Error correction:</strong> Reed-Solomon error correction codewords are generated and appended to the data.</li>
+        <li><strong>Module placement:</strong> The binary data is arranged in the QR code matrix following a specific zigzag pattern.</li>
+        <li><strong>Masking:</strong> A mask pattern is applied to ensure the QR code has a balanced ratio of black and white modules for optimal scanning.</li>
+    </ol>
+
+    <h2>Types of QR Codes: <span class="hl">Static vs Dynamic</span></h2>
+
+    <table>
+        <tr><th>Feature</th><th>Static QR Code</th><th>Dynamic QR Code</th></tr>
+        <tr><td>Content</td><td>Data encoded directly in the code</td><td>Contains a redirect URL; actual content stored on a server</td></tr>
+        <tr><td>Editable</td><td>No &mdash; once generated, content is permanent</td><td>Yes &mdash; destination can be changed anytime</td></tr>
+        <tr><td>Scan tracking</td><td>Not possible</td><td>Yes &mdash; track scans, location, device, time</td></tr>
+        <tr><td>Size/complexity</td><td>Larger for more data</td><td>Always small (short URL encoded)</td></tr>
+        <tr><td>Expiration</td><td>Never expires</td><td>May expire if service subscription lapses</td></tr>
+        <tr><td>Internet required</td><td>Only if content is a URL</td><td>Always (needs server to redirect)</td></tr>
+        <tr><td>Cost</td><td>Free</td><td>Usually requires paid subscription</td></tr>
+        <tr><td>Best for</td><td>Permanent content, offline use, business cards</td><td>Marketing campaigns, menus, events, trackable links</td></tr>
+    </table>
+
+    <h2>Common Uses of <span class="hl">QR Codes</span></h2>
+    <ul>
+        <li><strong>Digital payments:</strong> UPI QR codes in India, WeChat Pay and Alipay in China, and various mobile payment systems worldwide use QR codes for instant peer-to-peer and merchant payments.</li>
+        <li><strong>Website links:</strong> The most common use &mdash; encoding a URL that opens a website, landing page, or app download link when scanned.</li>
+        <li><strong>Restaurant menus:</strong> Post-pandemic, many restaurants replaced physical menus with QR codes on tables that link to digital menus.</li>
+        <li><strong>WiFi sharing:</strong> QR codes can encode WiFi credentials (SSID, password, encryption type), allowing guests to connect instantly by scanning.</li>
+        <li><strong>Contact sharing (vCard):</strong> Encode your contact details in a QR code for business cards &mdash; scanning adds all your info to the phone's contacts.</li>
+        <li><strong>Product authentication:</strong> Brands use QR codes on packaging to verify product authenticity and provide product information.</li>
+        <li><strong>Event tickets:</strong> Airlines, cinemas, concerts, and events use QR codes on digital tickets for quick entry verification.</li>
+        <li><strong>Inventory & logistics:</strong> Track packages, manage warehouse inventory, and trace supply chain movements using QR codes on products and containers.</li>
+    </ul>
+
+    <h2>QR Code <span class="hl">Capacity Limits</span></h2>
+    <table>
+        <tr><th>Data Type</th><th>Maximum Capacity</th></tr>
+        <tr><td>Numeric only (0-9)</td><td>7,089 characters</td></tr>
+        <tr><td>Alphanumeric (A-Z, 0-9, symbols)</td><td>4,296 characters</td></tr>
+        <tr><td>Binary / byte data</td><td>2,953 bytes</td></tr>
+        <tr><td>Kanji / full-width characters</td><td>1,817 characters</td></tr>
+    </table>
+    <p><strong>Practical recommendation:</strong> While QR codes can theoretically hold thousands of characters, keeping the content under <strong>300 characters</strong> ensures reliable scanning across all devices and cameras. Longer content creates denser QR codes that may be difficult to scan on older phones or at a distance.</p>
+
+    <h2>QR Code <span class="hl">Security</span> Considerations</h2>
+    <p>While QR codes themselves are neutral data containers, they can be exploited for malicious purposes. Here is how to stay safe:</p>
+    <ul>
+        <li><strong>Check the URL before opening:</strong> Most modern smartphone cameras show a URL preview when you point at a QR code. Always verify the domain looks legitimate before tapping to open.</li>
+        <li><strong>Beware of tampered QR codes:</strong> Fraudsters sometimes paste their own QR codes over legitimate ones (e.g., on payment terminals, parking meters, or restaurant tables). Look for signs of stickers placed over original codes.</li>
+        <li><strong>Use built-in camera apps:</strong> Your phone's default camera app is safer than third-party QR scanner apps, which may request unnecessary permissions or contain ads.</li>
+        <li><strong>Never enter sensitive information:</strong> If a QR code leads to a page asking for passwords, banking details, or OTPs, verify the website's authenticity independently before entering any data.</li>
+        <li><strong>QR codes in emails:</strong> Be cautious of QR codes received via email or messaging apps from unknown senders &mdash; these are increasingly used in phishing attacks (called "quishing").</li>
+    </ul>
+
+</section>
+
+<section class="calc-cta">
+    <div class="calc-cta-box">
+        <h3>Generate QR Code Free</h3>
+        <p>Create free QR codes for URLs, UPI payments, WiFi, contacts, and plain text. No signup required &mdash; instant download in PNG format.</p>
+        <a href="/" class="calc-cta-btn">Generate QR Code Free &rarr;</a>
+    </div>
+</section>
+
+<!-- Ad: Mid-page -->
+<div style="max-width:800px;margin:0 auto;padding:20px 24px;text-align:center;">
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8235932614579966" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+
+<section class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+        <h3>What does QR stand for?</h3>
+        <p>QR stands for Quick Response. The name reflects the code's ability to be scanned and decoded quickly. QR codes were invented in 1994 by Denso Wave, a subsidiary of Toyota, to track vehicle parts during manufacturing. Unlike traditional barcodes that store data in one dimension, QR codes store data in two dimensions (horizontally and vertically), allowing them to hold significantly more information.</p>
+    </div>
+    <div class="faq-item">
+        <h3>What is the difference between static and dynamic QR codes?</h3>
+        <p>Static QR codes have data permanently encoded &mdash; once generated, the content cannot be changed. They work offline and never expire. Dynamic QR codes contain a short redirect URL instead of the actual content. The destination can be changed anytime without reprinting the QR code. Dynamic codes also offer scan tracking and analytics. Static codes are free and simple; dynamic codes require a subscription service but offer flexibility.</p>
+    </div>
+    <div class="faq-item">
+        <h3>How much data can a QR code store?</h3>
+        <p>A QR code can store up to 7,089 numeric characters, 4,296 alphanumeric characters, or 2,953 bytes of binary data. However, the more data you encode, the denser and harder to scan the QR code becomes. For practical use, keeping the content under 300 characters is recommended for reliable scanning across all devices.</p>
+    </div>
+    <div class="faq-item">
+        <h3>Are QR codes safe to scan?</h3>
+        <p>QR codes themselves are safe &mdash; they are simply data containers. However, malicious actors can create QR codes that link to phishing websites, malware downloads, or fraudulent payment pages. Always check the URL preview before opening a link from a QR code. Use your phone's built-in camera app (which shows URL previews) rather than third-party scanner apps. Never scan QR codes from untrusted sources or codes that appear to be pasted over existing ones.</p>
+    </div>
+    <div class="faq-item">
+        <h3>Do QR codes expire?</h3>
+        <p>Static QR codes never expire &mdash; they work as long as the encoded content (URL, text, etc.) remains valid. If a static QR code links to a website and that website goes down, the QR code still works but the destination is unavailable. Dynamic QR codes may expire if the service provider's subscription lapses or if the provider sets an expiration date. For permanent use, static QR codes are more reliable.</p>
+    </div>
+</section>
+
+<section class="links-section">
+    <h2>QR Code Generators</h2>
+    <div class="links-grid">
+        <a href="/">QR Code Generator<span class="link-sub">All types in one tool</span></a>
+        <a href="/upi-qr-code-generator">UPI QR Code<span class="link-sub">Payment QR for all UPI apps</span></a>
+        <a href="/url-qr-code-generator">URL QR Code<span class="link-sub">Link to any website</span></a>
+        <a href="/wifi-qr-code-generator">WiFi QR Code<span class="link-sub">Share WiFi credentials</span></a>
+        <a href="/vcard-qr-code-generator">vCard QR Code<span class="link-sub">Share contact details</span></a>
+        <a href="/text-qr-code-generator">Text QR Code<span class="link-sub">Encode plain text</span></a>
+    </div>
+</section>
+
+<section class="links-section">
+    <h2>Related Guides</h2>
+    <div class="links-grid">
+        <a href="/upi-qr-code-guide">UPI QR Code Guide<span class="link-sub">Create, scan & accept payments</span></a>
+        <a href="/best-upi-apps/">Best UPI Apps 2026<span class="link-sub">Compare features & rewards</span></a>
+        <a href="/best-qr-code-generators/">Best QR Code Generators<span class="link-sub">Online tools compared</span></a>
+    </div>
+</section>
+
+<div class="disclaimer">
+    <div class="disclaimer-box">
+        <strong>Disclaimer:</strong> This guide is for informational purposes only. QR code specifications and standards may evolve. Always verify security best practices with current sources. QR Batao is a free tool by TUD Innovations Pvt Ltd. Last updated: March 2026.
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="/url-qr-code-generator">URL QR</a>
+        <a href="/wifi-qr-code-generator">WiFi QR</a>
+        <a href="/upi-qr-code-generator">UPI QR</a>
+        <a href="/vcard-qr-code-generator">vCard QR</a>
+    </div>
+    <p>&copy; 2026 QR Batao. Free QR Code Generator.</p>
+    <p style="margin-top:8px"><a href="/privacy" style="color:#f97316;text-decoration:none">Privacy Policy</a></p>
+</footer>
+
+<!-- Batao/Banao Cross-Linking Widget -->
+<script src="https://gstbatao.com/batao-banao-widget.js"></script>
+</body>
+</html>
