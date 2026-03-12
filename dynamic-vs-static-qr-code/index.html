@@ -27,7 +27,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8235932614579966" crossorigin="anonymous"></script>
     <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can I edit a static QR code after creating it?","acceptedAnswer":{"@type":"Answer","text":"No, static QR codes cannot be edited after creation. The data (URL, text, WiFi credentials, etc.) is permanently encoded in the QR code pattern itself. If you need to change the destination, you must generate a new QR code and replace the old one everywhere it was printed or displayed. This is why dynamic QR codes are preferred for marketing materials that may need updates."}},{"@type":"Question","name":"Are dynamic QR codes free?","acceptedAnswer":{"@type":"Answer","text":"Most dynamic QR code services require a paid subscription, typically ranging from $5-50 per month depending on features and scan volume. Some services offer a limited free tier (e.g., 1-3 dynamic codes with basic analytics). Static QR codes are always completely free to generate. QR Batao generates free static QR codes with no limits."}},{"@type":"Question","name":"Do dynamic QR codes expire?","acceptedAnswer":{"@type":"Answer","text":"Dynamic QR codes may expire if the service provider's subscription lapses or if the provider sets an expiration date. Since dynamic codes redirect through a server, the code stops working if the server goes down or the account is cancelled. Static QR codes never expire because the data is encoded directly in the code pattern."}},{"@type":"Question","name":"Which is better for business cards — static or dynamic?","acceptedAnswer":{"@type":"Answer","text":"For business cards, static QR codes are usually better because they never expire, work offline, and don't depend on any service. Encode your vCard (contact details) or LinkedIn profile URL directly. However, if you change jobs frequently, a dynamic QR code lets you update the destination without reprinting cards."}},{"@type":"Question","name":"Can I track scans with a static QR code?","acceptedAnswer":{"@type":"Answer","text":"No, static QR codes do not have built-in tracking capabilities. The data is decoded locally on the user's device without passing through any server. For scan tracking (number of scans, location, device type, time), you need a dynamic QR code that routes through a tracking server. Alternatively, you can use UTM parameters in the URL encoded in a static QR code and track visits in Google Analytics."}}]}
@@ -37,24 +37,24 @@
 </script>
     <style>
         :root {
-            --bg: #0a0a0b;
-            --card: #141416;
-            --card-hover: #1a1a1e;
-            --border: #2a2a2e;
-            --text: #e8e8ec;
-            --text-muted: #8a8a94;
-            --accent: #ff2d00;
-            --accent-dim: #ff2d0020;
-            --green: #22c55e;
-            --red: #ef4444;
-            --input-bg: #1a1a1e;
+            --bg: #09090b;
+            --card: #18181b;
+            --card-hover: #27272a;
+            --border: #27272a;
+            --text: #fafafa;
+            --text-muted: #a1a1aa;
+            --accent: #f97316;
+            --accent-dim: #f9731620;
+            --green: #34d399;
+            --red: #f87171;
+            --input-bg: #27272a;
             --blue: #38bdf8;
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
 
         body {
-            font-family: 'Geist', sans-serif;
+            font-family: 'Sora', system-ui, -apple-system, sans-serif;
             background: var(--bg);
             color: var(--text);
             line-height: 1.6;
@@ -81,7 +81,7 @@
         }
 
         .logo {
-            font-family: 'Geist', sans-serif;
+            font-family: 'Sora', system-ui, -apple-system, sans-serif;
             font-size: 24px;
             font-weight: 700;
             color: var(--text);
@@ -117,7 +117,7 @@
             margin: 0 auto;
         }
         .page-hero h1 {
-            font-family: 'Geist', sans-serif;
+            font-family: 'Sora', system-ui, -apple-system, sans-serif;
             font-size: 36px;
             line-height: 1.2;
             margin-bottom: 12px;
@@ -146,7 +146,7 @@
             padding: 0 24px 60px;
         }
         .content-section h2 {
-            font-family: 'Geist', sans-serif;
+            font-family: 'Sora', system-ui, -apple-system, sans-serif;
             font-size: 24px;
             margin: 40px 0 16px;
         }
@@ -209,7 +209,7 @@
             padding: 32px;
         }
         .calc-cta-box h3 {
-            font-family: 'Geist', sans-serif;
+            font-family: 'Sora', system-ui, -apple-system, sans-serif;
             font-size: 22px;
             margin-bottom: 8px;
         }
@@ -224,7 +224,7 @@
             background: var(--accent);
             color: #000;
             border-radius: 12px;
-            font-family: 'Geist', sans-serif;
+            font-family: 'Sora', system-ui, -apple-system, sans-serif;
             font-size: 16px;
             font-weight: 700;
             text-decoration: none;
@@ -238,7 +238,7 @@
             padding: 20px 24px 60px;
         }
         .faq-section h2 {
-            font-family: 'Geist', sans-serif;
+            font-family: 'Sora', system-ui, -apple-system, sans-serif;
             font-size: 24px;
             margin-bottom: 16px;
         }
@@ -258,7 +258,7 @@
             padding: 20px 24px 40px;
         }
         .links-section h2 {
-            font-family: 'Geist', sans-serif;
+            font-family: 'Sora', system-ui, -apple-system, sans-serif;
             font-size: 22px;
             margin-bottom: 16px;
         }
@@ -515,8 +515,8 @@
         <a href="/vcard-qr-code-generator">vCard QR</a>
     </div>
     <p>&copy; 2026 QR Batao. Free QR Code Generator.</p>
-    <p style="margin-top:8px"><a href="/privacy" style="color:#ff2d00;text-decoration:none">Privacy Policy</a></p>
-<p style="font-size:10px;color:var(--text-muted);margin-top:4px">A <a href="https://tuditools.com" target="_blank" rel="noopener noreferrer" style="color:var(--text-muted);text-decoration:none">TudiTools</a> product &mdash; <a href="https://tuditools.com" target="_blank" rel="noopener noreferrer" style="color:var(--text-muted);text-decoration:none">tuditools.com</a></p></footer>
+    <p style="margin-top:8px"><a href="/privacy" style="color:#f97316;text-decoration:none">Privacy Policy</a></p>
+<p style="font-size:10px;color:var(--text-muted);margin-top:4px">A <a href="https://tuditools.com" target="_blank" rel="noopener noreferrer" style="color:var(--text-muted);text-decoration:none">TUDITOOLS</a> Product &vert; <a href="https://tuditools.com" target="_blank" rel="noopener noreferrer" style="color:var(--text-muted);text-decoration:none">tuditools.com</a></p></footer>
 
 <!-- Batao/Banao Cross-Linking Widget -->
 </body>

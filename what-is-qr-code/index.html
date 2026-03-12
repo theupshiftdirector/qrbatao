@@ -27,7 +27,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8235932614579966" crossorigin="anonymous"></script>
     <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What does QR stand for?","acceptedAnswer":{"@type":"Answer","text":"QR stands for Quick Response. The name reflects the code's ability to be scanned and decoded quickly. QR codes were invented in 1994 by Denso Wave, a subsidiary of Toyota, to track vehicle parts during manufacturing. Unlike traditional barcodes that store data in one dimension, QR codes store data in two dimensions (horizontally and vertically), allowing them to hold significantly more information."}},{"@type":"Question","name":"What is the difference between static and dynamic QR codes?","acceptedAnswer":{"@type":"Answer","text":"Static QR codes have data permanently encoded — once generated, the content cannot be changed. They work offline and never expire. Dynamic QR codes contain a short redirect URL instead of the actual content. The destination can be changed anytime without reprinting the QR code. Dynamic codes also offer scan tracking and analytics. Static codes are free and simple; dynamic codes require a subscription service but offer flexibility."}},{"@type":"Question","name":"How much data can a QR code store?","acceptedAnswer":{"@type":"Answer","text":"A QR code can store up to 7,089 numeric characters, 4,296 alphanumeric characters, or 2,953 bytes of binary data. However, the more data you encode, the denser and harder to scan the QR code becomes. For practical use, keeping the content under 300 characters is recommended for reliable scanning across all devices."}},{"@type":"Question","name":"Are QR codes safe to scan?","acceptedAnswer":{"@type":"Answer","text":"QR codes themselves are safe — they are simply data containers. However, malicious actors can create QR codes that link to phishing websites, malware downloads, or fraudulent payment pages. Always check the URL preview before opening a link from a QR code. Use your phone's built-in camera app (which shows URL previews) rather than third-party scanner apps. Never scan QR codes from untrusted sources or codes that appear to be pasted over existing ones."}},{"@type":"Question","name":"Do QR codes expire?","acceptedAnswer":{"@type":"Answer","text":"Static QR codes never expire — they work as long as the encoded content (URL, text, etc.) remains valid. If a static QR code links to a website and that website goes down, the QR code still works but the destination is unavailable. Dynamic QR codes may expire if the service provider's subscription lapses or if the provider sets an expiration date. For permanent use, static QR codes are more reliable."}}]}
@@ -37,24 +37,24 @@
 </script>
     <style>
         :root {
-            --bg: #0a0a0b;
-            --card: #141416;
-            --card-hover: #1a1a1e;
-            --border: #2a2a2e;
-            --text: #e8e8ec;
-            --text-muted: #8a8a94;
-            --accent: #ff2d00;
-            --accent-dim: #ff2d0020;
-            --green: #22c55e;
-            --red: #ef4444;
-            --input-bg: #1a1a1e;
+            --bg: #09090b;
+            --card: #18181b;
+            --card-hover: #27272a;
+            --border: #27272a;
+            --text: #fafafa;
+            --text-muted: #a1a1aa;
+            --accent: #f97316;
+            --accent-dim: #f9731620;
+            --green: #34d399;
+            --red: #f87171;
+            --input-bg: #27272a;
             --blue: #38bdf8;
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
 
         body {
-            font-family: 'Geist', sans-serif;
+            font-family: 'Sora', system-ui, -apple-system, sans-serif;
             background: var(--bg);
             color: var(--text);
             line-height: 1.6;
@@ -81,7 +81,7 @@
         }
 
         .logo {
-            font-family: 'Geist', sans-serif;
+            font-family: 'Sora', system-ui, -apple-system, sans-serif;
             font-size: 24px;
             font-weight: 700;
             color: var(--text);
@@ -117,7 +117,7 @@
             margin: 0 auto;
         }
         .page-hero h1 {
-            font-family: 'Geist', sans-serif;
+            font-family: 'Sora', system-ui, -apple-system, sans-serif;
             font-size: 36px;
             line-height: 1.2;
             margin-bottom: 12px;
@@ -146,7 +146,7 @@
             padding: 0 24px 60px;
         }
         .content-section h2 {
-            font-family: 'Geist', sans-serif;
+            font-family: 'Sora', system-ui, -apple-system, sans-serif;
             font-size: 24px;
             margin: 40px 0 16px;
         }
@@ -209,7 +209,7 @@
             padding: 32px;
         }
         .calc-cta-box h3 {
-            font-family: 'Geist', sans-serif;
+            font-family: 'Sora', system-ui, -apple-system, sans-serif;
             font-size: 22px;
             margin-bottom: 8px;
         }
@@ -224,7 +224,7 @@
             background: var(--accent);
             color: #000;
             border-radius: 12px;
-            font-family: 'Geist', sans-serif;
+            font-family: 'Sora', system-ui, -apple-system, sans-serif;
             font-size: 16px;
             font-weight: 700;
             text-decoration: none;
@@ -238,7 +238,7 @@
             padding: 20px 24px 60px;
         }
         .faq-section h2 {
-            font-family: 'Geist', sans-serif;
+            font-family: 'Sora', system-ui, -apple-system, sans-serif;
             font-size: 24px;
             margin-bottom: 16px;
         }
@@ -258,7 +258,7 @@
             padding: 20px 24px 40px;
         }
         .links-section h2 {
-            font-family: 'Geist', sans-serif;
+            font-family: 'Sora', system-ui, -apple-system, sans-serif;
             font-size: 22px;
             margin-bottom: 16px;
         }
@@ -509,8 +509,8 @@
         <a href="/vcard-qr-code-generator">vCard QR</a>
     </div>
     <p>&copy; 2026 QR Batao. Free QR Code Generator.</p>
-    <p style="margin-top:8px"><a href="/privacy" style="color:#ff2d00;text-decoration:none">Privacy Policy</a></p>
-<p style="font-size:10px;color:var(--text-muted);margin-top:4px">A <a href="https://tuditools.com" target="_blank" rel="noopener noreferrer" style="color:var(--text-muted);text-decoration:none">TudiTools</a> product &mdash; <a href="https://tuditools.com" target="_blank" rel="noopener noreferrer" style="color:var(--text-muted);text-decoration:none">tuditools.com</a></p></footer>
+    <p style="margin-top:8px"><a href="/privacy" style="color:#f97316;text-decoration:none">Privacy Policy</a></p>
+<p style="font-size:10px;color:var(--text-muted);margin-top:4px">A <a href="https://tuditools.com" target="_blank" rel="noopener noreferrer" style="color:var(--text-muted);text-decoration:none">TUDITOOLS</a> Product &vert; <a href="https://tuditools.com" target="_blank" rel="noopener noreferrer" style="color:var(--text-muted);text-decoration:none">tuditools.com</a></p></footer>
 
 <!-- Batao/Banao Cross-Linking Widget -->
 </body>
